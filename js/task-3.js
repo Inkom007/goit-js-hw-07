@@ -3,9 +3,6 @@ const output = document.querySelector("#name-output");
 
 
 input.addEventListener("input", (event) => {
-    output.textContent = event.currentTarget.value;
+    output.textContent = event.currentTarget.value.trim();
    
 });
-
-console.log(input);
-console.log(output);
