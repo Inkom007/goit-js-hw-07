@@ -1,18 +1,19 @@
-const btn = document.querySelector(".change-color");
-const spanEl = document.querySelector(".color");
 
-btn.addEventListener("click", handleClick);
+const spanEl = document.querySelector(".color");
+const body = document.querySelector("body");
+
+
+
+
 spanEl.addEventListener("click", handleClick);
+body.addEventListener("click", handleClick);
 
 function handleClick() {
   const color = getRandomHexColor();
-  btn.style.backgroundColor = color;
   spanEl.style.backgroundColor = color;
+  body.style.backgroundColor = color;
+  spanEl.textContent = `${color}`;
 }
-
-
-
-
 
 
 function getRandomHexColor() {
