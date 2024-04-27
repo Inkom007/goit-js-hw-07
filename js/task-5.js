@@ -5,8 +5,9 @@ btn.addEventListener("click", handleClick);
 spanEl.addEventListener("click", handleClick);
 
 function handleClick() {
-  btn.style.backgroundColor = getRandomHexColor();
-  spanEl.style.backgroundColor = getRandomHexColor();
+  const color = getRandomHexColor();
+  btn.style.backgroundColor = color;
+  spanEl.style.backgroundColor = color;
 }
 
 

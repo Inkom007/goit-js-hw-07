@@ -29,3 +29,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
+.box-item {
+  color: black;
+  width: 30px;
+  height: 30px;
+}
