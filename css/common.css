@@ -35,8 +35,51 @@ body {
   letter-spacing: 0.04em;
 }
 
-.box-item {
-  color: black;
+.box {
   width: 30px;
   height: 30px;
+}
+
+#boxes {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  padding: 32px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+}
+
+input[type="number"] {
+  padding: 8px 72px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+}
+
+button[data-create] {
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  padding: 8px 16px;
+  width: 120px;
+}
+
+button[data-destroy] {
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4e4e;
+  padding: 8px 16px;
+  width: 120px;
 }
